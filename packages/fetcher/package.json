@@ -2,7 +2,11 @@
   "name": "fetcher",
   "version": "1.0.0",
   "author": "Vesper@之一",
-  "description": "",
+  "description": "this fetcher can help you to get the website open-graph metadata depends on your configuration. you can use it in browser or node runtime",
+  "compatible": "node & browser",
+  "engines": {
+    "node": ">=20"
+  },
   "keywords": [],
   "license": "MIT",
   "main": "dist/index.js",

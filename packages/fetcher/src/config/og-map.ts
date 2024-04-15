@@ -1,3 +1,4 @@
+export type OgMapType = typeof ogMap;
 // 导出所有支持的 og 属性
 export const ogMap = [
   "og:title",
@@ -49,4 +50,4 @@ export const ogMap = [
   "og:profile:first_name",
   "og:profile:last_name",
   "og:profile:username",
-];
+] as const;

@@ -1,24 +1,24 @@
 {
-  "name": "og-fetch",
+  "name": "fetcher",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "author": "Vesper@之一",
-  "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon"
-  },
+  "description": "",
   "keywords": [],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
+  },
   "devDependencies": {
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "cheerio": "1.0.0-rc.12"
   }
 }

@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  packages/og-fetcher:
+  packages/fetcher:
     dependencies:
       cheerio:
         specifier: 1.0.0-rc.12

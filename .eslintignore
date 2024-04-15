@@ -1,0 +1,12 @@
+dist/
+node_modules/
+.husky
+.eslintrc.*
+.lintstagedrc.*
+.gitignore
+.npmignore
+pnpm-lock.*
+.prettierrc.*
+.prettierignore
+CHANGELOG.md
+nodemon.json

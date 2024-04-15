@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "author": "Vesper@之一",
   "description": "this fetcher can help you to get the website open-graph metadata depends on your configuration. you can use it in browser or node runtime",
-  "compatible": "node & browser",
+  "compatible": [
+    "Node.js",
+    "web browser",
+    "Deno"
+  ],
   "engines": {
     "node": ">=20"
   },

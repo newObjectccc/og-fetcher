@@ -1,3 +1,13 @@
+/**
+ * this fetcher can help you to get the website open-graph metadata
+ * depends on your configuration. you can use it in browser or node runtime.
+ *
+ * ```ts
+ * import ogFetcher from "@vesper/og-fetcher";
+ * ogFetcher("https://www.example.com").then(console.log);
+ * ```
+ *
+ */
 import * as cheerio from "cheerio";
 import type { OgMapType } from "./config/og-map";
 import { ogMap } from "./config/og-map";

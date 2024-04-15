@@ -7,17 +7,16 @@ settings:
 importers:
 
   .:
-    dependencies:
-      oxlint:
-        specifier: ^0.2.17
-        version: 0.2.17
     devDependencies:
+      husky:
+        specifier: ^9.0.11
+        version: 9.0.11
       lint-staged:
         specifier: ^15.2.2
         version: 15.2.2
-      simple-git-hooks:
-        specifier: ^2.11.1
-        version: 2.11.1
+      oxlint:
+        specifier: ^0.2.17
+        version: 0.2.17
 
   packages/fetcher:
     dependencies:
@@ -65,7 +64,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/darwin-x64@0.2.17:
@@ -73,7 +72,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/linux-arm64-gnu@0.2.17:
@@ -81,7 +80,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/linux-arm64-musl@0.2.17:
@@ -89,7 +88,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/linux-x64-gnu@0.2.17:
@@ -97,7 +96,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/linux-x64-musl@0.2.17:
@@ -105,7 +104,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/win32-arm64@0.2.17:
@@ -113,7 +112,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@oxlint/win32-x64@0.2.17:
@@ -121,7 +120,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /@tsconfig/node10@1.0.11:
@@ -439,6 +438,12 @@ packages:
     engines: {node: '>=16.17.0'}
     dev: true
 
+  /husky@9.0.11:
+    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dev: true
+
   /ignore-by-default@1.0.1:
     resolution: {integrity: sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==}
     dev: true
@@ -647,7 +652,7 @@ packages:
       '@oxlint/linux-x64-musl': 0.2.17
       '@oxlint/win32-arm64': 0.2.17
       '@oxlint/win32-x64': 0.2.17
-    dev: false
+    dev: true
 
   /parse5-htmlparser2-tree-adapter@7.0.0:
     resolution: {integrity: sha512-B77tOZrqqfUfnVcOrUvfdLbz4pu4RopLD/4vmu3HUPswwTA8OH0EMW9BlWR2B0RCoiZRAHEUu7IxeP1Pd1UU+g==}
@@ -733,12 +738,6 @@ packages:
   /signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
-    dev: true
-
-  /simple-git-hooks@2.11.1:
-    resolution: {integrity: sha512-tgqwPUMDcNDhuf1Xf6KTUsyeqGdgKMhzaH4PAZZuzguOgTl5uuyeYe/8mWgAr6IBxB5V06uqEf6Dy37gIWDtDg==}
-    hasBin: true
-    requiresBuild: true
     dev: true
 
   /simple-update-notifier@2.0.0:

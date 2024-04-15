@@ -4,10 +4,12 @@ node_modules/
 .lintstagedrc.*
 .gitignore
 .npmignore
-commitlint.config.js
+commitlint.config.*
 pnpm-lock.*
 src/*
 .prettierrc.*
 .prettierignore
 CHANGELOG.md
 rollup.config.*
+nodemon.json
+tsconfig.*

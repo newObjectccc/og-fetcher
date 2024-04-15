@@ -1,7 +1,7 @@
 import * as cheerio from "cheerio";
 import { ogMap } from "./config/og-map";
-// ... testsss
-export async fsunction fetchHtml(url: string): Promise<string> {
+
+export async function fetchHtml(url: string): Promise<string> {
   let htmlString = "";
   try {
     htmlString = await fetch(url).then((res) => res.text());

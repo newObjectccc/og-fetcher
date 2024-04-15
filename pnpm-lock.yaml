@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      git-cliff:
+        specifier: ^2.2.1
+        version: 2.2.1
       husky:
         specifier: ^9.0.11
         version: 9.0.11
@@ -410,6 +413,68 @@ packages:
   /get-stream@8.0.1:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
+    dev: true
+
+  /git-cliff-darwin-arm64@2.2.1:
+    resolution: {integrity: sha512-ZFoqm1Il5ayIYmcbtmZoNmudmsRZPsntXGjR4YHOqKm32ehBlLWL9loqrd6DOJoxj6nlQygoxJ0r4rBPDgczMQ==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /git-cliff-darwin-x64@2.2.1:
+    resolution: {integrity: sha512-fTICBh8vvaLYjMqr8ebbIQbqsg/Wd9YrsxO2uol+WzQInpxxY0uwxYY1mqCyUYA2D/NS5Cm+fz53axM3NppulA==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /git-cliff-linux-arm64@2.2.1:
+    resolution: {integrity: sha512-oxanf/f+ZnB3D2VmY8mLVNMzV527G6k++Wng0vZlQz/89neGD8wmBbzkqgsKs2quLqWnc8p/lNsTKBGtPP5pJg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /git-cliff-linux-x64@2.2.1:
+    resolution: {integrity: sha512-LJToEYKqcvrpX/uv8jklScljrCQWsPThrZEo6arhxCDXUWi/hUYtqaJDU8CowL5SoUhgY4JKXzacU1cmNUWC5Q==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /git-cliff-windows-arm64@2.2.1:
+    resolution: {integrity: sha512-iJSDadCKLedtPBvkpfRVc9pB2tsmiEwAazPyXBZzHH+SmxQmQwbGOHp1ExPaOTvKqCvFiwQbG1/9X4LbVI5tmw==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /git-cliff-windows-x64@2.2.1:
+    resolution: {integrity: sha512-nMP+z6y51Fz7KjhOcMQf0WQcTCuIxcGW0L7lBBDRtDt2AXG0enGPj3AB1xJlAX/EDWM4bENDwswwKtjQt9mkGA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /git-cliff@2.2.1:
+    resolution: {integrity: sha512-bALbaUgFgbaqc21iWIje4CgXWfVgtQ5v+NqTd++hbkPgC6blCenrTRudhExRX58GOvWPQnKgPuSus1uhpxU2iw==}
+    hasBin: true
+    dependencies:
+      execa: 8.0.1
+    optionalDependencies:
+      git-cliff-darwin-arm64: 2.2.1
+      git-cliff-darwin-x64: 2.2.1
+      git-cliff-linux-arm64: 2.2.1
+      git-cliff-linux-x64: 2.2.1
+      git-cliff-windows-arm64: 2.2.1
+      git-cliff-windows-x64: 2.2.1
     dev: true
 
   /glob-parent@5.1.2:

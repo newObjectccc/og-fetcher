@@ -19,5 +19,8 @@
   "devDependencies": {
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged"
   }
 }

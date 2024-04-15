@@ -1,4 +1,6 @@
 /**
+ * @module @vesper/og-fetcher
+ *
  * this fetcher can help you to get the website open-graph metadata
  * depends on your configuration. you can use it in browser or node runtime.
  *
@@ -22,6 +24,7 @@ import { ogMap } from "./config/og-map";
 export async function fetchHtml(url: string): Promise<string> {
   let htmlString = "";
   try {
+    /** get html string via fetch api */
     htmlString = await fetch(url).then((res) => res.text());
   } catch (error) {
     console.error("Failed to fetch page: ", error);
@@ -37,6 +40,7 @@ export async function fetchHtml(url: string): Promise<string> {
  * @return {cheerio.CheerioAPI} [return cheerio object]
  */
 export function parseHtml(html: string): cheerio.CheerioAPI {
+  /** transform html string to cheerio object */
   return cheerio.load(html);
 }
 

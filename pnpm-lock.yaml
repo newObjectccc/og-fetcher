@@ -23,6 +23,9 @@ importers:
       rollup:
         specifier: ^4.14.3
         version: 4.14.3
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
 
   packages/fetcher:
     dependencies:
@@ -39,6 +42,8 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
+
+  packages/react-og-card: {}
 
 packages:
 

@@ -1,4 +1,3 @@
 packages:
   - "packages/fetcher"
-  - "packages/react-ogcard/og-card"
-  - "packages/react-ogcard/example/"
+  - "packages/react-ogcard"

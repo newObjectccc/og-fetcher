@@ -1,0 +1,27 @@
+{
+  "name": "react-ogcard",
+  "version": "1.0.0",
+  "author": "newObjectccc",
+  "description": "open graph card for react",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "repository": "newObjectccc/react-ogcard",
+  "scripts": {},
+  "source": "src/index.tsx",
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "react-dom": "18.2",
+    "react-scripts": "5.0.1",
+    "typescript": "^5.4.5"
+  }
+}

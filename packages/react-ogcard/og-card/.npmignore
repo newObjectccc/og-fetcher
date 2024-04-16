@@ -1,0 +1,16 @@
+node_modules/
+.husky
+.eslintrc.*
+.lintstagedrc.*
+.gitignore
+.npmignore
+commitlint.config.*
+pnpm-lock.*
+src/*
+example/*
+.prettierrc.*
+.prettierignore
+CHANGELOG.md
+rollup.config.*
+nodemon.json
+tsconfig.*

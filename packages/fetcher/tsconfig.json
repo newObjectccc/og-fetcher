@@ -1,14 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "UMD",
+    "module": "esnext",
     "strict": true,
     "outDir": "./dist",
     "declaration": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "emitDeclarationOnly": true,
-    "allowImportingTsExtensions": true
+    "moduleResolution": "node"
   },
   "include": ["src"],
   "exclude": ["node_modules"]

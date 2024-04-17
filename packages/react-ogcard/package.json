@@ -14,13 +14,14 @@
   "peerDependencies": {
     "react": "^18.0.0"
   },
-  "repository": "newObjectccc/react-ogcard",
   "scripts": {
     "build": "tsc"
   },
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
+    "og-fetcher": "workspace:*",
     "react-dom": "18.2",
     "react-scripts": "5.0.1",
     "typescript": "^5.4.5"

@@ -22,13 +22,13 @@ import { ogMap } from "./config/og-map";
  * @return  {Promise<string>}       [return html string or empty string if failed to fetch]
  */
 export async function fetchHtml(url: string): Promise<string> {
-  let htmlString = "";
-  try {
-    /** get html string via fetch api */
-    htmlString = await fetch(url).then((res) => res.text());
-  } catch (error) {
-    console.error("Failed to fetch page: ", error);
-  }
+  /** get html string via fetch api */
+  const htmlString = await fetch(url, { mode: "no-cors" })
+    .then((res) => res.text())
+    .catch((err) => {
+      console.error("Failed to fetch page: ", err);
+      return "";
+    });
   return htmlString;
 }
 
@@ -57,8 +57,11 @@ export function getOpenGraphMeta<T extends typeof ogMap>(
   matcher: T = ogMap as T
 ): Record<string, string> {
   const ogMeta: Record<string, string> = {};
-  $("meta[property^='og:']").each((_, el) => {
+  const metaWithOg = $("meta[property^='og:']");
+  console.log("🚀 ~ metaWithOg:", metaWithOg);
+  metaWithOg.each((_, el) => {
     const property = $(el).attr("property");
+    console.log("🚀 ~ $ ~ property:", property);
     if (!property || !matcher.includes(property as any)) return;
     const content = $(el).attr("content");
     if (property && content) {

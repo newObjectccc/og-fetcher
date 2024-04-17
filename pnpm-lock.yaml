@@ -94,6 +94,9 @@ importers:
       '@types/react':
         specifier: ^18.2.79
         version: 18.2.79
+      og-fetcher:
+        specifier: workspace:*
+        version: link:../fetcher
       react:
         specifier: ^18.0.0
         version: 18.2.0
